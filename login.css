@@ -1,0 +1,158 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  background-image: url('image.1.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(255, 204, 0, 0.95);
+  color: #131515;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #131515;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); 
+  background: rgba(0, 0, 0, 0.7); 
+  padding-top: 100px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.section {
+  display: block; 
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section.active {
+  display: block;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffcc00; 
+  color: #131515; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800; 
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffcc00; 
+}
+
+.signin-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signin-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  position: relative;
+}
+
+footer .contact-link{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #ffcc00;
+}
+
+footer .contact-link:hover {
+    color:  #ffcc00;
+    text-decoration: underline;
+}
+.contact-link {
+  color: #ffcc00;
+  text-decoration: none; 
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

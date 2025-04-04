@@ -1,0 +1,224 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    background-image: url('image.1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #131515;
+    background-color: #ffffff; 
+    color: #333333; 
+}
+
+header {
+    background: rgba(255, 204, 0, 0.95);
+    color: #131515;
+    border-top: 1px solid #ccc;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffcc00; 
+    color: #333333; 
+}
+
+.logo img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #131515;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    color: #333333; 
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffffff; 
+    color: #333333; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #008000; 
+    color: white;
+    border: none;
+    cursor: pointer; 
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #005700; 
+}
+
+.dashboard-content,
+  .admin-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+  }
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+  
+  footer .contact-link{
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+      color: #ffcc00;
+  }
+  
+  footer .contact-link:hover {
+      color:  #ffcc00;
+      text-decoration: underline;
+  }
+
+#reported-items {
+    margin-top: 20px;
+}
+
+#reported-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reported-items li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rounded-profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-picture-label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.profile-picture-label:hover img {
+    opacity: 0.8;
+}
+
+#profile-picture-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: opacity 0.3s ease;
+}
+
+.styled-dropdown {
+    background-color: transparent;
+    color: #131515;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif; 
+    font-weight: bold; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.styled-dropdown:hover {
+    background-color: #0000ff;
+    color: white;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}

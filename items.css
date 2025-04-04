@@ -1,0 +1,207 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e0e0e0; 
+  background-image: url('image.1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(255, 204, 0, 0.9);
+  color: #131515;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  position: relative; 
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; 
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+.section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput, #foundSearchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    color: #000; 
+}
+
+#lostItems {
+    margin-top: 30px; 
+}
+
+#lostItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.lost-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    background: #fff;
+    color: #000; 
+}
+
+#recentUpdates {
+    margin-top: 30px;
+}
+
+#recentUpdatesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recent-update-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff; 
+    color: #000; 
+}
+#testimonials {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  #testimonialForm {
+    display: flex;
+    flex-direction: column;
+  }
+  #testimonialForm label {
+    margin-top: 10px;
+  }
+  #testimonialForm input, #testimonialForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #testimonialForm button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #testimonialForm button:hover {
+    background-color: #45a049;
+  }
+
+footer {
+    padding: 20px;
+    background-color:#131515;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+footer .contact-link {
+    color: #ffcc00; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .contact-link:hover {
+    color: #ffcc00; 
+    text-decoration: underline;
+}
+
+#lostItemsContainer p, #foundItemsContainer p {
+  font-size: 18px;
+  color: #ff0000; 
+  text-align: center;
+  width: 100%;
+}
+
+.item-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.found-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(33.333% - 10px);
+  box-sizing: border-box;
+  background: #fff; 
+  color: #000; 
+}

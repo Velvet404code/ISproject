@@ -1,0 +1,137 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    background-image: url('image.1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 204, 0, 0.95); 
+    color: #131515;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.scrolled {
+    background: rgba(255, 204, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #131515;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Bright orange for hover */
+}
+
+.section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+
+.custodian-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 40px); 
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;  
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: auto;
+}
+
+footer .contact-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #ffcc00;
+}
+
+footer .contact-link:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
